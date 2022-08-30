@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-def max_integer(my_list=[]):
-    """Find the biggest integer of a list."""
-    if len(my_list) == 0:
-        return (None)
+# 9-print_last_digit.py
+# Brennan D Baraban <375@holbertonschool.com>
 
-    big = my_list[0]
-    for i in range(len(my_list)):
-        if my_list[i] > big:
-            big = my_list[i]
 
-    return (big)
+def print_last_digit(number):
+    """Print the last digit of a number and return it."""
+    print(abs(number) % 10, end="")
+    return (abs(number) % 10)
